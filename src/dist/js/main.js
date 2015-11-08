@@ -35248,7 +35248,7 @@ var Home = React.createClass({displayName: "Home",
 	},
 
 	onSearchSubmit: function (queryString) {
-		console.log(queryString);
+		// console.log(queryString);
 		this.setState({
 			searchQuery: queryString,
 			searchResultsLoaded: false
@@ -35258,7 +35258,7 @@ var Home = React.createClass({displayName: "Home",
 			url: 'http://www.omdbapi.com/?t=' + queryString + '&plot=short&type=movie',
 			method: 'GET',
 			success: function (data) {
-				console.log(data);
+				// console.log(data);
 				if (typeof data.Error != 'undefined') {
 					this.setState({
 						searchError: 'Movie not found. Try using it\'s exact name.'
@@ -35287,14 +35287,14 @@ var Home = React.createClass({displayName: "Home",
 
 		moviesArray = moviesArray.reverse();
 
-		console.log('Added: ' + this.state.searchResult.Title);
+		// console.log('Added: ' + this.state.searchResult.Title);
 		this.setState({
 			moviesArray: moviesArray,
 			searchResult: {},
 			searchQuery: '',
 			searchResultsLoaded: false
 		});
-		console.log(moviesArray);
+		// console.log(moviesArray);
 	}
 
 });
