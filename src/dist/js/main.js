@@ -35179,8 +35179,7 @@ var SortedList = React.createClass({displayName: "SortedList",
 							React.createElement("li", null, movie.Title, " (", movie.Year, ")"), 
 							React.createElement("li", null, movie.Plot), 	
 							React.createElement("li", null, "Rating: ", React.createElement("span", {style: {fontWeight: 'bold'}}, movie.imdbRating))
-						), 
-						React.createElement("span", {style: {fontWeight: 'bold'}}, "Click to add")
+						)
 					)
 				)
 			);

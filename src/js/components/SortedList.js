@@ -21,7 +21,6 @@ var SortedList = React.createClass({
 							<li>{movie.Plot}</li>	
 							<li>Rating: <span style={{fontWeight: 'bold'}}>{movie.imdbRating}</span></li>
 						</ul>
-						<span style={{fontWeight: 'bold'}}>Click to add</span>
 					</div>
 				</div>
 			);
